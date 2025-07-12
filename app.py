@@ -40,7 +40,7 @@ with open('label_encoder_gender.pkl', 'rb') as file:
 with open('onehot_encoder_geo.pkl', 'rb') as file:
     onehot_encoder_geo = pickle.load(file)
 
-with open('scaler.pk1', 'rb') as file:
+with open('scaler.pkl', 'rb') as file:
     scaler = pickle.load(file)
 
 geography = st.selectbox('🌍 Geography', onehot_encoder_geo.categories_[0])
